@@ -92,9 +92,21 @@ input {
     margin-top: 25px;
 }
 
-.password a {
-    color: #b84e4e;
-    text-decoration: none;
+.password-link {
+    color: red;
+}
+
+.forgot-password-btn {
+    display: flex;
+    justify-self: center;
+    position: relative;
+    left: 160px;
+    top: 5px;
+    border: none;
+}
+
+.forgot-password-link {
+    color: red;
 }
 
 /* Login Button */
@@ -106,7 +118,7 @@ input {
     border: none;
     border-radius: 12px;
     background-color: #cf5656;
-    color: white;
+    color: rgb(243, 4, 4);
     font-size: 17px;
 }
 
@@ -144,8 +156,23 @@ input {
 /* Sign Up */
 
 .login a {
-    color: #b84e4e;
+    color: #050505;
     text-decoration: none;
+} */
+
+.forgot-password {
+    color: black;
+    text-decoration: none;
+}
+
+.login-btn > a {
+    color: white;
+    text-decoration: none;
+}
+
+.or-signup-btn a {
+    color: rgb(219, 98, 98);
+    font-weight: 600;
 }
 
 .login a:hover {

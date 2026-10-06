@@ -6,6 +6,11 @@
             -webkit-tap-highlight-color: transparent;
         }
 
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
         :root {
             --bg-color: #f7f8fc;
             --card-bg: #ffffff;

@@ -68,6 +68,10 @@
             transition: background-color 0.2s;
         }
 
+        .back-btn > a {
+            color: black;
+        }
+
         .back-btn:hover {
             background-color: #f1f5f9;
         }
@@ -327,6 +331,15 @@
             box-shadow: var(--shadow-btn);
             transition: background-color 0.2s ease, transform 0.1s ease;
             margin-top: 6px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn-submit > a {
+            text-decoration: none;
+            color: white;
         }
 
         .btn-submit:hover {

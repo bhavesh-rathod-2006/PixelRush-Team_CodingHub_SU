@@ -491,6 +491,11 @@
       cursor: pointer;
     }
 
+    .call-btn > a {
+      text-decoration: none;
+      color: white;
+    }
+
     .backup-btn {
       background-color: #EEF2FF;
       color: #131B2E;
@@ -506,6 +511,11 @@
       cursor: pointer;
       text-align: center;
       line-height: 1.2;
+    }
+
+    .backup-btn > a {
+      color: black;
+      text-decoration: none;
     }
 
     .token-row {
