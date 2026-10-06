@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Relay Tracking — Someone Needs You</title>
+  <link rel="stylesheet" href="./09.DonationRequestNotification_style.css">
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header class="header">
+    <div class="header-left">
+      <a href="#" class="back-btn">←</a>
+      <h1 class="page-title">Live Relay Tracking</h1>
+    </div>
+    <div class="header-right">
+      <div class="location-pill">📍 Ahmedabad</div>
+      <div class="user-avatar-img">👤</div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Emergency Broadcast Banner -->
+    <div class="emergency-banner">
+      <div class="banner-left">
+        <span class="banner-dot"></span>
+        <span>CRITICAL SOS BROADCAST • 1.2 KM A</span>
+      </div>
+      <div class="banner-timer">
+        <span>⏱</span> 01:54:20
+      </div>
+    </div>
+
+    <!-- Hero Headline -->
+    <div class="hero-section">
+      <div class="immediate-tag">
+        <span>📈</span> IMMEDIATE MATCH FOUND
+      </div>
+      <h2 class="hero-heading">SOMEONE NEEDS YOU</h2>
+      <p class="hero-subtext">
+        A life depends on a fast response in Vastrapur, Ahmedabad.
+      </p>
+    </div>
+
+    <!-- Requisition & Hospital Card -->
+    <div class="card">
+      <div class="requisition-header">
+        <div class="blood-badge-group">
+          <div class="blood-type-box">
+            <span class="blood-badge-type">B-</span>
+            <span class="blood-badge-sub">RARE</span>
+          </div>
+          <div>
+            <div class="units-title">2 Units Neede</div>
+            <div class="units-subtext">Surgery in progress • Standby</div>
+          </div>
+        </div>
+        <div class="urgent-pill">! Urgent</div>
+      </div>
+
+      <div class="hospital-title-row">
+        <div class="hospital-info">
+          <div class="hospital-icon">✚</div>
+          <div>
+            <div class="hospital-name">Shree Krishna Multispeciality</div>
+            <div class="hospital-address">Vastrapur Lake Rd, Ahmedabad (380015)</div>
+          </div>
+        </div>
+        <span class="ot-tag">OT-4</span>
+      </div>
+
+      <!-- Live Map Simulation Box -->
+      <div class="map-container">
+        <svg class="map-img" viewBox="0 0 500 160" preserveAspectRatio="none">
+          <rect width="500" height="160" fill="#E2E8F0"/>
+          <!-- Simplified Map Roads -->
+          <path d="M-10 80 Q 150 100 250 60 T 510 70" stroke="#FFFFFF" stroke-width="12" fill="none"/>
+          <path d="M140 -10 L 200 170" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+          <path d="M340 -10 L 300 170" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+          <!-- Route Polyline -->
+          <path d="M 60 80 Q 150 100 250 60 T 400 70" stroke="#3B82F6" stroke-width="5" stroke-dasharray="5,4" fill="none"/>
+          <!-- Marker Pins -->
+          <circle cx="60" cy="80" r="7" fill="#2563EB"/>
+          <circle cx="400" cy="70" r="9" fill="#DC2626"/>
+        </svg>
+
+        <div class="map-overlay-bar">
+          <div class="map-dist">
+            <span>⚠️</span> 1.2 km away
+          </div>
+          <div class="map-eta">~6–8 mins drive</div>
+        </div>
+      </div>
+
+      <!-- Triage Doctor Bar -->
+      <div class="doctor-box">
+        <div class="doctor-shield-icon">🛡</div>
+        <div>
+          <div class="doctor-name">
+            Dr. V. Trivedi <span class="verified-check">✓</span>
+          </div>
+          <div class="doctor-role">Emergency Triage Head • Trauma ICU</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Eligibility Check Card -->
+    <div class="card">
+      <div class="eligibility-header">
+        <h3 class="eligibility-title">Quick Eligibility Check</h3>
+        <span class="fast-protocol-tag">FAST PROTOCOL</span>
+      </div>
+
+      <div class="eligibility-list">
+        <div class="eligibility-item">
+          <div class="item-left">
+            <span class="square-indicator"></span>
+            <span class="item-text">Feeling healthy & hydrated today</span>
+          </div>
+          <span class="check-icon">✓</span>
+        </div>
+
+        <div class="eligibility-item">
+          <div class="item-left">
+            <span class="square-indicator"></span>
+            <span class="item-text">Last blood donation was > 3 months ago</span>
+          </div>
+          <span class="check-icon">✓</span>
+        </div>
+
+        <div class="eligibility-item">
+          <div class="item-left">
+            <span class="square-indicator"></span>
+            <span class="item-text">No ongoing medication, fever, or alcohol in 24h</span>
+          </div>
+          <span class="check-icon">✓</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Privacy Assured Information Banner -->
+    <div class="privacy-box">
+      <div class="privacy-icon">🛡</div>
+      <div class="privacy-text">
+        <strong>Privacy Assured:</strong> Your phone number remains completely masked. Free VIP emergency parking and hospital fast-track entry pass are generated instantly upon confirmation.
+      </div>
+    </div>
+
+    <!-- Call to Action Buttons -->
+    <button class="accept-btn">
+      <span>♡</span> ACCEPT EMERGENCY REQUEST <span>→</span>
+    </button>
+
+    <button class="decline-btn">
+      <span>→</span> Cannot Donate • Pass to Next Nearby Donor
+    </button>
+
+    <!-- Footer Broadcast Note -->
+    <div class="broadcast-note">
+      <span>👥</span>
+      <span>Broadcast active across 14 matched verified donors in Kalol</span>
+    </div>
+
+  </main>
+
+</body>
+</html>

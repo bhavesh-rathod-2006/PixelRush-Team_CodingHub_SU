@@ -1,0 +1,516 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #F7F8FA;
+      color: #1A1D20;
+      padding-bottom: 40px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 16px;
+      width: 100%;
+    }
+
+    /* Header */
+    .header {
+      background-color: #F7F8FA;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-btn {
+      font-size: 22px;
+      text-decoration: none;
+      color: #1A1D20;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .page-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1A1D20;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .location-pill {
+      background-color: #EEF2FF;
+      color: #374151;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .user-avatar-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #DBEAFE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      overflow: hidden;
+    }
+
+    /* Top Emergency Alert Banner */
+    .emergency-banner {
+      background-color: #C61A1A;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .banner-left {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .banner-dot {
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    .banner-timer {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 3px 8px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 700;
+    }
+
+    /* Hero Headline Section */
+    .hero-section {
+      margin-bottom: 16px;
+    }
+
+    .immediate-tag {
+      font-size: 11px;
+      font-weight: 800;
+      color: #C61A1A;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 2px;
+    }
+
+    .hero-heading {
+      font-size: 26px;
+      font-weight: 900;
+      color: #1A1D20;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .hero-subtext {
+      font-size: 13px;
+      color: #4B5563;
+      line-height: 1.4;
+    }
+
+    /* Cards */
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+
+    /* Hospital & Blood Requisition Card */
+    .requisition-header {
+      background-color: #F3F4F6;
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .blood-badge-group {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .blood-type-box {
+      width: 44px;
+      height: 44px;
+      background-color: #C61A1A;
+      color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .blood-badge-type {
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .blood-badge-sub {
+      font-size: 7px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-top: 1px;
+    }
+
+    .units-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #1A1D20;
+    }
+
+    .units-subtext {
+      font-size: 11px;
+      color: #C61A1A;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .urgent-pill {
+      background-color: #FEE2E2;
+      color: #C61A1A;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .hospital-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .hospital-info {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .hospital-icon {
+      width: 28px;
+      height: 28px;
+      background-color: #EEF2FF;
+      color: #1E40AF;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .hospital-name {
+      font-size: 15px;
+      font-weight: 800;
+      color: #1A1D20;
+      line-height: 1.2;
+    }
+
+    .hospital-address {
+      font-size: 11px;
+      color: #6B7280;
+      margin-top: 2px;
+    }
+
+    .ot-tag {
+      font-size: 11px;
+      font-weight: 800;
+      color: #047857;
+    }
+
+    /* Map Graphic Area */
+    .map-container {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      background-color: #E5E7EB;
+      height: 130px;
+      margin-bottom: 12px;
+    }
+
+    .map-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .map-overlay-bar {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      right: 8px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 8px;
+      padding: 6px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .map-dist {
+      font-weight: 700;
+      color: #C61A1A;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .map-eta {
+      color: #4B5563;
+      font-weight: 600;
+    }
+
+    /* Doctor Info Row */
+    .doctor-box {
+      background-color: #F3F4F6;
+      border-radius: 10px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .doctor-shield-icon {
+      width: 26px;
+      height: 26px;
+      background-color: #DBEAFE;
+      color: #1E40AF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .doctor-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1A1D20;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .verified-check {
+      color: #059669;
+      font-size: 11px;
+    }
+
+    .doctor-role {
+      font-size: 10px;
+      color: #6B7280;
+    }
+
+    /* Quick Eligibility Check Card */
+    .eligibility-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .eligibility-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #1A1D20;
+    }
+
+    .fast-protocol-tag {
+      font-size: 9px;
+      font-weight: 800;
+      color: #6B7280;
+      letter-spacing: 0.5px;
+    }
+
+    .eligibility-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .eligibility-item {
+      background-color: #F8FAFC;
+      border-radius: 8px;
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .item-left {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .square-indicator {
+      width: 10px;
+      height: 10px;
+      background-color: #C61A1A;
+      border-radius: 2px;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .item-text {
+      font-size: 12px;
+      color: #374151;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .check-icon {
+      color: #059669;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* Privacy Assured Box */
+    .privacy-box {
+      background-color: #DBEAFE;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 16px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .privacy-icon {
+      width: 24px;
+      height: 24px;
+      background-color: white;
+      color: #1E40AF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .privacy-text {
+      font-size: 11px;
+      color: #1E3A8A;
+      line-height: 1.4;
+    }
+
+    .privacy-text strong {
+      font-weight: 700;
+    }
+
+    /* Action Buttons */
+    .accept-btn {
+      width: 100%;
+      background-color: #C61A1A;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(198, 26, 26, 0.2);
+    }
+
+    .decline-btn {
+      width: 100%;
+      background-color: #EEF2FF;
+      color: #1E40AF;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+
+    /* Footer Note */
+    .broadcast-note {
+      text-align: center;
+      font-size: 10px;
+      color: #6B7280;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      line-height: 1.3;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 480px) {
+      .hero-heading {
+        font-size: 22px;
+      }
+      .accept-btn {
+        font-size: 13px;
+        padding: 12px;
+      }
+    }

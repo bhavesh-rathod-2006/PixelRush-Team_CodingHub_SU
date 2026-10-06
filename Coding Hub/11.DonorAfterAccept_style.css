@@ -1,0 +1,746 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #F7F8FA;
+      color: #1A1D20;
+      padding-bottom: 40px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 16px;
+      width: 100%;
+    }
+
+    /* Header */
+    .header {
+      background-color: #F7F8FA;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-btn {
+      font-size: 22px;
+      text-decoration: none;
+      color: #1A1D20;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .logo-badge {
+      width: 28px;
+      height: 28px;
+      background-color: #FEE2E2;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #C61A1A;
+      font-size: 14px;
+    }
+
+    .user-avatar-img {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-color: #DBEAFE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      overflow: hidden;
+    }
+
+    /* Top Action Bar */
+    .action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .active-status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #C61A1A;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #C61A1A;
+      border-radius: 50%;
+    }
+
+    .action-bar-right {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .sos-btn {
+      background-color: #FEE2E2;
+      color: #C61A1A;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 16px;
+      font-weight: 800;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .share-btn {
+      background-color: #E5E7EB;
+      color: #4B5563;
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    /* Common Card */
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+
+    /* Card 1: Hero Confirmed */
+    .hero-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .hero-title-group {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .hero-icon {
+      width: 36px;
+      height: 36px;
+      background-color: #C61A1A;
+      color: white;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .hero-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #C61A1A;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-heading {
+      font-size: 20px;
+      font-weight: 800;
+      color: #1A1D20;
+      line-height: 1.1;
+    }
+
+    .fast-track-pill {
+      background-color: #FEE2E2;
+      color: #C61A1A;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 12px;
+      text-align: center;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .hero-description {
+      font-size: 13px;
+      color: #4B5563;
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+
+    .arrival-window-box {
+      background-color: #F3F4F6;
+      border-radius: 10px;
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .arrival-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .arrival-icon {
+      width: 28px;
+      height: 28px;
+      background-color: #C61A1A;
+      color: white;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .arrival-label {
+      font-size: 9px;
+      font-weight: 800;
+      color: #6B7280;
+      letter-spacing: 0.5px;
+    }
+
+    .arrival-time {
+      font-size: 16px;
+      font-weight: 800;
+      color: #C61A1A;
+    }
+
+    .arrival-target {
+      font-size: 12px;
+      color: #4B5563;
+      font-weight: 500;
+    }
+
+    .arrival-badge {
+      background-color: #E5E7EB;
+      color: #1A1D20;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    /* Card 2: Hospital Info */
+    .hospital-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      gap: 8px;
+    }
+
+    .trauma-wing-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #C61A1A;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hospital-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1A1D20;
+      margin: 2px 0 4px;
+    }
+
+    .hospital-location {
+      font-size: 12px;
+      color: #6B7280;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .blood-type-badge {
+      background-color: #C61A1A;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 1.1;
+      flex-shrink: 0;
+    }
+
+    .blood-badge-value {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .blood-badge-sub {
+      font-size: 7px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .hospital-info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .info-box {
+      background-color: #F3F4F6;
+      border-radius: 8px;
+      padding: 8px 10px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .info-box-icon {
+      color: #C61A1A;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .info-box-label {
+      font-size: 8px;
+      font-weight: 800;
+      color: #6B7280;
+      letter-spacing: 0.5px;
+    }
+
+    .info-box-value {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1A1D20;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .doctor-bar {
+      background-color: #EEF2FF;
+      border-radius: 8px;
+      padding: 8px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doctor-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .doctor-avatar {
+      width: 24px;
+      height: 24px;
+      background-color: #DBEAFE;
+      color: #1E40AF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .doctor-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1A1D20;
+    }
+
+    .phone-icon {
+      color: #C61A1A;
+      font-size: 14px;
+    }
+
+    /* Card 3: Live Routing */
+    .routing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .routing-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #1A1D20;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .gps-badge {
+      background-color: #DBEAFE;
+      color: #1E40AF;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    .map-container {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      background-color: #E5E7EB;
+      height: 160px;
+      margin-bottom: 12px;
+    }
+
+    .map-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .map-turn-banner {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: white;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #1A1D20;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .map-bottom-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(17, 24, 39, 0.85);
+      color: white;
+      padding: 8px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+    }
+
+    .route-text {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #E5E7EB;
+    }
+
+    .route-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #C61A1A;
+      border-radius: 50%;
+    }
+
+    .route-stats {
+      font-weight: 700;
+      color: white;
+    }
+
+    .nav-btn-main {
+      width: 100%;
+      background-color: #C61A1A;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .routing-actions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .action-btn-soft-blue {
+      background-color: #DBEAFE;
+      color: #1E40AF;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .action-btn-soft-red {
+      background-color: #FEE2E2;
+      color: #C61A1A;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    /* Card 4: Mission Progress Timeline */
+    .progress-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .progress-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #1A1D20;
+    }
+
+    .step-tag {
+      color: #C61A1A;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 36px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      bottom: 25px;
+      width: 2px;
+      background-color: #E5E7EB;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 18px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-icon {
+      position: absolute;
+      left: -36px;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      border: 2px solid white;
+      z-index: 1;
+    }
+
+    .icon-completed {
+      background-color: #C61A1A;
+      color: white;
+    }
+
+    .icon-active {
+      background-color: #C61A1A;
+      color: white;
+    }
+
+    .icon-pending {
+      background-color: #F3F4F6;
+      color: #9CA3AF;
+    }
+
+    .timeline-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .timeline-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #1A1D20;
+    }
+
+    .timeline-title-active {
+      color: #C61A1A;
+    }
+
+    .timeline-desc {
+      font-size: 11px;
+      color: #6B7280;
+      margin-top: 2px;
+      line-height: 1.3;
+    }
+
+    .time-badge {
+      font-size: 11px;
+      color: #6B7280;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .active-pill {
+      background-color: #FEE2E2;
+      color: #C61A1A;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    /* Card 5: Immediate Arrival Checklist */
+    .checklist-card {
+      background-color: #F3F4F6;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .checklist-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #1A1D20;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .checklist-item {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 12px;
+      color: #374151;
+      line-height: 1.3;
+    }
+
+    .checklist-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .checklist-icon {
+      color: #C61A1A;
+      font-size: 14px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    .text-red-bold {
+      color: #C61A1A;
+      font-weight: 700;
+    }
+
+    /* Dispatch Desk Footer Box */
+    .dispatch-box {
+      text-align: center;
+      padding: 16px;
+    }
+
+    .dispatch-icon {
+      width: 32px;
+      height: 32px;
+      background-color: #E5E7EB;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 8px;
+      font-size: 14px;
+    }
+
+    .dispatch-label {
+      font-size: 10px;
+      font-weight: 800;
+      color: #6B7280;
+      letter-spacing: 0.5px;
+    }
+
+    .dispatch-phone {
+      font-size: 18px;
+      font-weight: 800;
+      color: #C61A1A;
+      margin: 2px 0 6px;
+    }
+
+    .dispatch-meta {
+      font-size: 11px;
+      color: #6B7280;
+      line-height: 1.3;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 480px) {
+      .hospital-info-grid {
+        grid-template-columns: 1fr;
+      }
+      .routing-actions {
+        grid-template-columns: 1fr;
+      }
+      .hero-heading {
+        font-size: 18px;
+      }
+    }

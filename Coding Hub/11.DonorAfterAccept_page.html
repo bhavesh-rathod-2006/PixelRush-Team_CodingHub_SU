@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Relay — Active Emergency Mission</title>
+  <link rel="stylesheet" href="./11.DonorAfterAccept_style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <a href="#" class="back-btn">‹</a>
+      <div class="logo-badge">🩸</div>
+    </div>
+    <div class="user-avatar-img">👤</div>
+  </header>
+
+  <main class="container">
+
+    <!-- Top Status Bar -->
+    <div class="action-bar">
+      <div class="active-status">
+        <span class="status-dot"></span>
+        ACTIVE EMERGENCY MISSION
+      </div>
+      <div class="action-bar-right">
+        <button class="sos-btn">🚨 SOS HELP</button>
+        <button class="share-btn">🔗</button>
+      </div>
+    </div>
+
+    <!-- Card 1: Hero Confirmed -->
+    <div class="card">
+      <div class="hero-header">
+        <div class="hero-title-group">
+          <div class="hero-icon">🤝</div>
+          <div>
+            <div class="hero-tag">HERO CONFIRMED</div>
+            <h1 class="hero-heading">Thank You,<br>Lifesaver!</h1>
+          </div>
+        </div>
+        <span class="fast-track-pill">FAST<br>TRACK</span>
+      </div>
+
+      <p class="hero-description">
+        You accepted the critical requisition for <strong>City Hospital ICU</strong>. A patient in trauma stabilization is awaiting your match.
+      </p>
+
+      <div class="arrival-window-box">
+        <div class="arrival-left">
+          <div class="arrival-icon">⏱</div>
+          <div>
+            <div class="arrival-label">ARRIVAL WINDOW</div>
+            <div>
+              <span class="arrival-time">24 m 41 s</span>
+              <span class="arrival-target">(Target: 25 Mins)</span>
+            </div>
+          </div>
+        </div>
+        <span class="arrival-badge">18m Drive</span>
+      </div>
+    </div>
+
+    <!-- Card 2: Emergency Trauma Wing -->
+    <div class="card">
+      <div class="hospital-top">
+        <div>
+          <div class="trauma-wing-tag">✚ EMERGENCY TRAUMA WING</div>
+          <h2 class="hospital-name">City Hospital — PSM</h2>
+          <div class="hospital-location">
+            📍 Near Vastrapur Lake, Ahmedabad • 1.8 km
+          </div>
+        </div>
+        <div class="blood-type-badge">
+          <div class="blood-badge-value">B-</div>
+          <div class="blood-badge-sub">WHOLE BLOOD</div>
+        </div>
+      </div>
+
+      <div class="hospital-info-grid">
+        <div class="info-box">
+          <span class="info-box-icon">✱</span>
+          <div>
+            <div class="info-box-label">CASE PRIORITY</div>
+            <div class="info-box-value">ICU-3 / Bed 12 (Re</div>
+          </div>
+        </div>
+        <div class="info-box">
+          <span class="info-box-icon">🩸</span>
+          <div>
+            <div class="info-box-label">REQ UNITS</div>
+            <div class="info-box-value">2 Units (1 by you)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-bar">
+        <div class="doctor-left">
+          <div class="doctor-avatar">Dr</div>
+          <span class="doctor-name">Dr. A. Mehta (Head of Triage)</span>
+        </div>
+        <span class="phone-icon">📞</span>
+      </div>
+    </div>
+
+    <!-- Card 3: Live Routing -->
+    <div class="card">
+      <div class="routing-header">
+        <div class="routing-title">
+          <span>📍</span> Live Routing
+        </div>
+        <span class="gps-badge">GPS Active</span>
+      </div>
+
+      <div class="map-container">
+        <!-- Static Map Simulation Graphic -->
+        <svg class="map-img" viewBox="0 0 500 200" preserveAspectRatio="none">
+          <rect width="500" height="200" fill="#E2E8F0"/>
+          <!-- Roads -->
+          <path d="M-10 100 Q 150 120 250 80 T 510 90" stroke="#FFFFFF" stroke-width="14" fill="none"/>
+          <path d="M120 -10 L 180 210" stroke="#FFFFFF" stroke-width="10" fill="none"/>
+          <path d="M350 -10 L 310 210" stroke="#FFFFFF" stroke-width="10" fill="none"/>
+          <!-- Active Route Line -->
+          <path d="M 50 100 Q 150 120 250 80 T 420 90" stroke="#3B82F6" stroke-width="6" stroke-dasharray="6,4" fill="none"/>
+          <!-- Location Pins -->
+          <circle cx="50" cy="100" r="8" fill="#2563EB"/>
+          <circle cx="420" cy="90" r="10" fill="#DC2626"/>
+        </svg>
+
+        <div class="map-turn-banner">
+          <span>⚠️</span> Turn right at Lake Junction
+        </div>
+
+        <div class="map-bottom-bar">
+          <div class="route-text">
+            <span class="route-dot"></span>
+            Via Drive-In Rd (Clear Traffic)
+          </div>
+          <div class="route-stats">1.8 km • 60 km/h</div>
+        </div>
+      </div>
+
+      <button class="nav-btn-main">
+        <span>↪</span> Start Navigation (Google Maps)
+      </button>
+
+      <div class="routing-actions">
+        <button class="action-btn-soft-blue">📞 Call Coordinator</button>
+        <button class="action-btn-soft-red">🪪 Emergency Pass</button>
+      </div>
+    </div>
+
+    <!-- Card 4: Mission Progress -->
+    <div class="card">
+      <div class="progress-header">
+        <h2 class="progress-title">Mission Progress</h2>
+        <span class="step-tag">Step 2 of 4</span>
+      </div>
+
+      <div class="timeline">
+        <!-- Step 1 -->
+        <div class="timeline-item">
+          <div class="timeline-icon icon-completed">✓</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-title">Request Accepted</div>
+              <div class="timeline-desc">Triage team notified of donor allocation.</div>
+            </div>
+            <span class="time-badge">Just now</span>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-item">
+          <div class="timeline-icon icon-active">🚘</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-title timeline-title-active">En Route to Hospital</div>
+              <div class="timeline-desc">Estimated 18 minutes driving time remaining.</div>
+            </div>
+            <span class="active-pill">Active</span>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-item">
+          <div class="timeline-icon icon-pending">🩺</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-title">Rapid Donor Screening</div>
+              <div class="timeline-desc">Priority 3-minute vitals verification at Counter 4.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-item">
+          <div class="timeline-icon icon-pending">🤍</div>
+          <div class="timeline-content">
+            <div>
+              <div class="timeline-title">Donation & Recovery</div>
+              <div class="timeline-desc">350ml whole blood relay to ICU trauma table.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5: Immediate Arrival Checklist -->
+    <div class="checklist-card">
+      <div class="checklist-title">
+        <span>📋</span> Immediate Arrival Checklist
+      </div>
+
+      <div class="checklist-item">
+        <span class="checklist-icon">🪪</span>
+        <span>Carry physical Government Photo ID or digital Aadhaar/Driving License.</span>
+      </div>
+
+      <div class="checklist-item">
+        <span class="checklist-icon">💧</span>
+        <span>Drink 500ml water immediately to optimize donation ease.</span>
+      </div>
+
+      <div class="checklist-item">
+        <span class="checklist-icon">⏩</span>
+        <span class="text-red-bold">Report directly to Trauma Desk Counter 4 for bypass fast-track entry.</span>
+      </div>
+    </div>
+
+    <!-- Dispatch Desk Footer Card -->
+    <div class="card dispatch-box">
+      <div class="dispatch-icon">🎧</div>
+      <div class="dispatch-label">EMERGENCY DISPATCH DESK</div>
+      <div class="dispatch-phone">1800-BLOOD-RELAY</div>
+      <div class="dispatch-meta">
+        Encrypted mission token <strong>#RELAY-88219-ICU</strong> • Verified<br>
+        by State Blood Transfusion Council
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

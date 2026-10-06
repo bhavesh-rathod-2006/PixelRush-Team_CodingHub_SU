@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Relay — Matching Donors</title>
+  <link rel="stylesheet" href="./13.MatchingDonor_style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <div class="brand-logo"></div>
+      <div class="brand-text">
+        <span class="brand-name">Blood Relay</span>
+        <span class="brand-subtitle">EMERGENCY RESPONSE</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="sos-btn">✱ 108 SOS</button>
+      <div class="user-avatar">👤</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Status Indicator -->
+    <div class="status-banner">
+      <span class="status-dot"></span>
+      LIVE RELAY ACTIVE
+    </div>
+
+    <h1 class="page-title">Matching donors</h1>
+    <p class="page-subtitle">People nearby who may be able to help right now.</p>
+
+    <!-- Request Details Card -->
+    <div class="card request-card">
+      <div class="blood-type-badge">
+        <div class="blood-type-label">TYPE</div>
+        <div class="blood-type-value">B-</div>
+      </div>
+      <div class="request-details">
+        <div class="request-title">Emergency Request #BR-8821</div>
+        <span class="status-pill">● Broadcasting</span>
+        <div class="hospital-location">
+          <span>🏥</span> Shree Krishna Multispeciality Hospital, Vastrapur
+        </div>
+      </div>
+    </div>
+
+    <!-- Map View Box -->
+    <div class="map-box">
+      <div class="map-area">
+        <span class="map-tag">VASTRAPUR LAKE</span>
+        
+        <!-- Hospital Pin -->
+        <div class="map-pin map-pin-hospital">
+          <div class="pin-icon-red">✱</div>
+          <div class="pin-label-white">Hospital</div>
+        </div>
+
+        <!-- Donor Pins -->
+        <div class="map-pin map-pin-donor donor-1">
+          <div class="donor-avatar-circle">PP</div>
+          <div class="distance-tag">2.4 km</div>
+        </div>
+
+        <div class="map-pin map-pin-donor donor-2">
+          <div class="donor-avatar-circle">AS</div>
+          <div class="distance-tag">1.2 km</div>
+        </div>
+
+        <div class="map-pin map-pin-donor donor-3">
+          <div class="donor-avatar-circle">RM</div>
+          <div class="distance-tag">3.1 km</div>
+        </div>
+
+        <span class="map-tag map-tag-bottom">SG HIGHWAY (380054)</span>
+      </div>
+      <div class="map-footer">
+        <div class="map-footer-left">
+          <span class="green-dot"></span>
+          <span>3 Active Donors Alerted</span>
+        </div>
+        <span class="updated-time">Updated 12s ago</span>
+      </div>
+    </div>
+
+    <!-- Donors List -->
+    <div class="section-header">
+      <h2 class="section-title">Available Nearby (3)</h2>
+      <a href="#" class="section-link">Fastest Response</a>
+    </div>
+
+    <!-- Donor 1 -->
+    <div class="donor-card">
+      <div class="donor-header">
+        <div class="donor-info-left">
+          <div class="donor-initials">
+            AS
+            <span class="check-badge">✓</span>
+          </div>
+          <div>
+            <div class="donor-name-area">
+              <span class="donor-name">Aarav Sharma</span>
+              <span class="type-tag">B-</span>
+            </div>
+            <div class="donor-stats">4 successful donations • Verified</div>
+          </div>
+        </div>
+        <div class="donor-distance-info">
+          <div class="distance-pill">1.2 km away</div>
+          <div class="eta-text">~6 mins ETA</div>
+        </div>
+      </div>
+      <div class="donor-badges">
+        <div class="badge-group">
+          <span class="badge-green">● Available now</span>
+          <span class="badge-gray">🔔 Notified</span>
+        </div>
+        <span class="donor-location">Near Vastrapur Lake</span>
+      </div>
+      <button class="contact-btn">📞 CONTACT AARAV</button>
+    </div>
+
+    <!-- Donor 2 -->
+    <div class="donor-card">
+      <div class="donor-header">
+        <div class="donor-info-left">
+          <div class="donor-initials">
+            PP
+            <span class="check-badge">✓</span>
+          </div>
+          <div>
+            <div class="donor-name-area">
+              <span class="donor-name">Priya Patel</span>
+              <span class="type-tag">B-</span>
+            </div>
+            <div class="donor-stats">2 donations • Certified Donor</div>
+          </div>
+        </div>
+        <div class="donor-distance-info">
+          <div class="distance-pill">2.4 km away</div>
+          <div style="font-size: 11px; color: #6B7280; margin-top: 4px;">~14 mins ETA</div>
+        </div>
+      </div>
+      <div class="donor-badges">
+        <div class="badge-group">
+          <span class="badge-green">● Available</span>
+          <span class="badge-gray">👁 Viewed alert</span>
+        </div>
+        <span class="donor-location">Bodakdev</span>
+      </div>
+      <button class="contact-btn">📞 CONTACT PRIYA</button>
+    </div>
+
+    <!-- Donor 3 -->
+    <div class="donor-card">
+      <div class="donor-header">
+        <div class="donor-info-left">
+          <div class="donor-initials">
+            RM
+            <span class="check-badge">✓</span>
+          </div>
+          <div>
+            <div class="donor-name-area">
+              <span class="donor-name">Rahul Mehta</span>
+              <span class="type-tag">B-</span>
+            </div>
+            <div class="donor-stats">6 donations • Regular Donor</div>
+          </div>
+        </div>
+        <div class="donor-distance-info">
+          <div class="distance-pill">3.1 km away</div>
+          <div style="font-size: 11px; color: #6B7280; margin-top: 4px;">~18 mins ETA</div>
+        </div>
+      </div>
+      <div class="donor-badges">
+        <div class="badge-group">
+          <span class="badge-green">● Available</span>
+          <span class="badge-gray">🔔 Notified</span>
+        </div>
+        <span class="donor-location">Memnagar</span>
+      </div>
+      <button class="contact-btn">📞 CONTACT RAHUL</button>
+    </div>
+
+    <!-- Escalation Section -->
+    <div class="escalation-box">
+      <div class="escalation-title">
+        <span>❓</span>
+        Can't reach them or need faster dispatch?
+      </div>
+      <p class="escalation-desc">
+        If donors don't answer within 3 minutes, escalate to nearby certified blood banks and emergency courier squads.
+      </p>
+      <button class="action-btn-white">📐 Widen search radius to 10 km</button>
+      <button class="action-btn-blue">🏥 Notify Red Cross & Civil Blood Banks</button>
+    </div>
+
+    <!-- Privacy Note -->
+    <div class="privacy-note">
+      🔒 Direct call proxy enabled. Your phone number is masked for safety.
+    </div>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="#" class="nav-item">
+      <span class="nav-icon">🩸</span>
+      <span>Home</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="nav-icon">📈</span>
+      <span>Requests</span>
+    </a>
+    <a href="#" class="nav-item active">
+      <span class="nav-icon">👥</span>
+      <span>Donors</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="nav-icon">👤</span>
+      <span>Profile</span>
+    </a>
+  </nav>
+
+</body>
+</html>
